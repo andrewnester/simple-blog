@@ -1,0 +1,9 @@
+CREATE DATABASE blog;
+
+CREATE TABLE posts (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    body TEXT NOT NULL,
+    created DATETIME,
+    updated DATETIME
+) ENGINE = InnoDB;
